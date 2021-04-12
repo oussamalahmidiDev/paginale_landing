@@ -69,3 +69,13 @@
     /*border: 1px solid #888;*/
     width: 80%;
 }
+
+.btn-primary {
+    background-color:#42E497;
+    border-color: #42E497;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #34a96c;
+    border-color: #34a96c;
+}

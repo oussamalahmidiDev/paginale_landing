@@ -53,7 +53,7 @@ export const Home = (props: any) => {
                 <div className="container">
                     <div className="row" data-aos="zoom-in">
                         <div
-                            className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+                            className="ml-auto col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                         >
                             <img
                                 src="assets/img/clients/client-1.png"
@@ -73,7 +73,7 @@ export const Home = (props: any) => {
                         </div>
 
                         <div
-                            className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
+                            className="mr-auto  col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
                         >
                             <img
                                 src="assets/img/clients/client-3.png"
@@ -82,35 +82,6 @@ export const Home = (props: any) => {
                             />
                         </div>
 
-                        <div
-                            className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-                        >
-                            <img
-                                src="assets/img/clients/client-4.png"
-                                className="img-fluid"
-                                alt=""
-                            />
-                        </div>
-
-                        <div
-                            className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-                        >
-                            <img
-                                src="assets/img/clients/client-5.png"
-                                className="img-fluid"
-                                alt=""
-                            />
-                        </div>
-
-                        <div
-                            className="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center"
-                        >
-                            <img
-                                src="assets/img/clients/client-6.png"
-                                className="img-fluid"
-                                alt=""
-                            />
-                        </div>
                     </div>
                 </div>
             </section>
@@ -122,7 +93,7 @@ export const Home = (props: any) => {
                     </div>
 
                     <div className="row content">
-                        <div className="col-lg-6">
+                        <div className="col">
                             <p>
                                 Paginale is a company that makes life easier for e-commerce
                                 merchants by offering them solutions, adaptable to different

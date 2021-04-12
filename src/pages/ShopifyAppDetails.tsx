@@ -18,11 +18,13 @@ export const ShopifyAppDetails = (props: any) => {
     if (!app) return <p>Not Found</p>;
     return <Fragment>
         <main id="main">
-            <section id="breadcrumbs" className="breadcrumbs">
+            <section id="breadcrumbs" className="mt-0 breadcrumbs">
                 <div className="container">
                     <ol>
                         <li><Link to="/">Home</Link></li>
-                        <li>All Shopify Apps</li>
+                        <li>   <Link to="../shopify-apps/">
+                            All Shopify Apps
+                        </Link></li>
                         <li>{app.name}</li>
                     </ol>
                     <h2>{app.name}</h2>

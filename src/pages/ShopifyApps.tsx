@@ -23,12 +23,16 @@ export const ShopifyApps = (props: any) => {
 
     return <Fragment>
         <main id="main">
-            <section id="breadcrumbs" className="breadcrumbs">
+            <section id="breadcrumbs" className="mt-0 breadcrumbs">
                 <div className="container">
                     <ol>
                         <li><Link
                             to="/">Home</Link></li>
-                        <li>All Shopify Apps</li>
+                        <li>
+                            <Link to=".">
+                            All Shopify Apps
+                            </Link>
+                        </li>
                     </ol>
                     <h2>Explore Our Shopify Apps</h2>
                 </div>

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 
 export const Home = (props: any) => {
-    return <>
+    return <Fragment>
         <section id="hero" className="d-flex align-items-center">
             <div className="container">
                 <div className="row">
@@ -706,5 +706,5 @@ export const Home = (props: any) => {
                 </div>
             </section>
         </main>
-    </>;
+    </Fragment>;
 };

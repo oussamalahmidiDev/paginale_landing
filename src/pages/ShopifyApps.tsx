@@ -1,10 +1,27 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {Link} from "react-router-dom";
+import {App, appsList} from "../AppsList";
 
 export const ShopifyApps = (props: any) => {
 
+    const appCard = (app: App, key: number) => <li key={key} className="app-item">
+        <div className="mr-3">
+            <img
+                src={app.icon}
+                alt=""
+                className="app-icon"
+            />
+        </div>
+        <div className="">
+            <h2 className="app-title mb-3">{app.name}</h2>
+            <p className="app-description">
+                {app.description}
+            </p>
+            <Link to={app.id} className="app-btn">See More</Link>
+        </div>
+    </li>;
 
-    return <>
+    return <Fragment>
         <main id="main">
             <section id="breadcrumbs" className="breadcrumbs">
                 <div className="container">
@@ -18,28 +35,10 @@ export const ShopifyApps = (props: any) => {
             </section>
 
             <section className="inner-page">
-                <ul className="container">
-                    <li className="app-item row">
-                        <div className="col">
-                            <img
-                                src="/assets/img/apps/orderify-logo.png"
-                                alt=""
-                                className="app-icon"
-                            />
-                        </div>
-                        <div className="col">
-                            <h2 className="app-title mb-3">Orderify</h2>
-                            <p className="app-description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Excepturi rerum facere minima unde inventore numquam, qui ea
-                                adipisci tempore, rem asperiores. Iusto, consequuntur vitae ipsa
-                                sapiente libero nobis. Reiciendis, ullam!
-                            </p>
-                            <a href="orderify.html" className="app-btn">See More</a>
-                        </div>
-                    </li>
-                </ul>
+                <div className="apps-container container">
+                    {appsList.map(appCard)}
+                </div>
             </section>
         </main>
-    </>;
+    </Fragment>;
 };
